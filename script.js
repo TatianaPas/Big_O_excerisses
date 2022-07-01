@@ -12,6 +12,25 @@ function findNemo(array) {
   })
 }
 
+//forEach loop
+const findNemo2 = array => {
+  array.forEach(fish => {
+    if(fish==='nemo') {
+      console.log('Found Nemo');
+    }
+  })
+}
+
+//other loop
+const findNemo3 = array =>{
+  for(let fish of array) {
+    if(fish === 'nemo') {
+      console.log('FoundNemo');
+    }
+  }
+}
+
+
 findNemo(large); // O(n) - Linear Time
 
 function logFirstItem(items) {
