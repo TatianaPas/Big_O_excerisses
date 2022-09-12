@@ -35,7 +35,7 @@ class HashTable {
     }
       this.data[address].push([key,value])
       return this.data
-  }
+  } //O(1)
   get(key) {
     let address=this._hash(key);
     const currentBucket = this.data[address];
@@ -48,7 +48,7 @@ class HashTable {
       }
     }
     return undefined;
-  }
+  }   //O(1)
 
 }
 
